@@ -15,6 +15,11 @@ This sample differs from a real world application as the EJB and the WAR are cre
 
 Download and unzip [Apache JBatch CLI](http://central.maven.org/maven2/org/apache/batchee/batchee-cli/0.5-incubating/batchee-cli-0.5-incubating.zip)
 
+Create `conf/system.properties` with the content:
+```properties
+openejb.jndiname.format = {interfaceClass}
+```
+
 Modify `conf/openejb.xml` to contain:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
